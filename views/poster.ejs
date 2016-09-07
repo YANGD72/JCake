@@ -5,6 +5,9 @@
     <title></title>
   </head>
   <body>
-    <%=JSON.stringify(req)%>
+    <%-JSON.stringify(req.body)%>
+    <script type="text/javascript">
+      console.log(<%=req%>);
+    </script>
   </body>
 </html>
