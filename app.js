@@ -4,16 +4,25 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var multer = require('multer');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+var storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'uploads/')
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.fieldname + '-' + Date.now()+ file.originalname)
+  }
+})
+
+var upload = multer({ storage: storage})
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-//test
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
@@ -29,6 +38,12 @@ app.use(cookieParser());
 }));
 */
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.post('/upload', upload.single('img'), function(req, res, next){
+  console.log(req.file);
+  res.send('Successfully uploaded!');
+});
+
 
 app.use('/', routes);
 app.use('/users', users);
