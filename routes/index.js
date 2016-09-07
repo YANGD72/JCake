@@ -10,9 +10,12 @@ router.get('/main', function(req, res, next){
   res.render('main')
 })
 
-
 router.get('/introduce', function(req, res, next){
   res.render('introduce')
+})
+
+router.post('/posttest', function(req, res, next){
+  res.render('poster', {req:req})
 })
 
 module.exports = router;
