@@ -3,7 +3,7 @@ var pool = mysql.createPool({
   connectionLimit: 3,
   host: 'localhost',
   user: 'root',
-  database: 'testdb',
+  database: 'JCake',
   password: ''
 })
 
@@ -22,6 +22,4 @@ var pool = mysql.createPool({
   });
 // }
 // register();
-module.export = {
-
-}
+module.export = pool;

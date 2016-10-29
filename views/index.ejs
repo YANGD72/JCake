@@ -1,156 +1,153 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <!-- 합쳐지고 최소화된 최신 CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Title -->
+        <title>JCake Homepage</title>
+        <!-- Meta -->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <!-- Favicon -->
+        <link href="favicon.ico" rel="shortcut icon">
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="/stylesheets/css/bootstrap.css" rel="stylesheet">
+        <!-- Template CSS -->
+        <link rel="stylesheet" href="/stylesheets/css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="/stylesheets/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="/stylesheets/css/nexus.css" rel="stylesheet">
+        <link rel="stylesheet" href="/stylesheets/css/responsive.css" rel="stylesheet">
+        <link rel="stylesheet" href="/stylesheets/css/custom.css" rel="stylesheet">
+        <!-- Google Fonts-->
+        <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+      <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=pOWIfM9XDlvXBf6q16MQ"></script>
 
   </head>
   <body>
-    <nav class="white" role="navigation">
-        <div class="nav-wrapper container">
-          <a id="logo-container" href="#" class="brand-logo">Logo</a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#">Navbar Link</a></li>
-          </ul>
-
-          <ul id="nav-mobile" class="side-nav">
-            <li><a href="#">Navbar Link</a></li>
-          </ul>
-          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-        </div>
-      </nav>
-
-      <div id="index-banner" class="parallax-container">
-        <div class="carousel carousel-slider center" data-indicators="true">
-    <div class="carousel-fixed-item center">
-    </div>
-    <div class="carousel-item white-text" href="#one!" style="background-image:url(mosavLaBAY.jpeg);">
-    </div>
-    <div class="carousel-item white-text" href="#two!" style="background-image:url(mosaJJ3KTF.jpeg)">
-    </div>
-    <div class="carousel-item white-text" href="#three!" style="background-image:url(mosaKBRiaL.jpeg)">
-    </div>
-    <div class="carousel-item white-text" href="#four!" style="background-image:url(mosa8Lv4Ys.jpeg)">
-    </div>
-  </div>
-      </div>
-
-
-      <div class="container">
-        <div class="section">
-
-          <!--   Icon Section   -->
-          <div class="row">
-            <div class="col s12 m4">
-              <div class="icon-block">
-                <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-                <h5 class="center">Speeds up development</h5>
-
-                <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-              </div>
+    <div id="body-bg">
+            <!-- Phone/Email -->
+            <div id="pre-header" class="background-gray-lighter">
+                <div class="container no-padding">
+                    <div class="row hidden-xs">
+                        <div class="col-sm-6 padding-vert-5">
+                            <strong>Phone:</strong>&nbsp;1-800-123-4567
+                        </div>
+                        <div class="col-sm-6 text-right padding-vert-5">
+                            <strong>Email:</strong>&nbsp;info@joomla51.com
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- End Phone/Email -->
+           <%-include ./common/header%>
 
-            <div class="col s12 m4">
-              <div class="icon-block">
-                <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-                <h5 class="center">User Experience Focused</h5>
 
-                <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-              </div>
+            <!-- === BEGIN CONTENT === -->
+        <div id="slideshow" class="bottom-border-shadow">
+            <div class="container no-padding background-white bottom-border">
+                <div class="row">
+                    <!-- Carousel Slideshow -->
+                    <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                        <!-- Carousel Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example" data-slide-to="1"></li>
+                            <li data-target="#carousel-example" data-slide-to="2"></li>
+                        </ol>
+                        <div class="clearfix"></div>
+                        <!-- End Carousel Indicators -->
+                        <!-- Carousel Images -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="/images/slidephoto1.png">
+                            </div>
+                            <div class="item">
+                                <img src="/images/slidephoto2.png">
+                            </div>
+                            <div class="item">
+                                <img src="/images/slidephoto3.png">
+                            </div>
+                            <div class="item">
+                                <img src="/images/slidephoto4.png">
+                            </div>
+                        </div>
+                        <!-- End Carousel Images -->
+                        <!-- Carousel Controls -->
+                        <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                        <!-- End Carousel Controls -->
+                    </div>
+                    <!-- End Carousel Slideshow -->
+                </div>
             </div>
+        </div>
 
-            <div class="col s12 m4">
-              <div class="icon-block">
-                <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-                <h5 class="center">Easy to work with</h5>
 
-                <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-              </div>
+        <div id="content" class="bottom-border-shadow">
+            <div class="container background-white bottom-border">
+                <div class="row margin-vert-30">
+                    <!-- Main Text -->
+                    <div class="col-md-6">
+
+                        <h2>이용 안내</h2>
+                        <br>
+                        <h3>운영 시간</h3>
+                        <p>주문제작 및 클래스로만 운영하기 때문에 주문 및 수업이 없을 경우 문을 열지 않을때가 많습니다. 수업은 오전 10시 부터 가능합니다 </p>
+                        <br><h3>식재료</h3>
+                        <p>서울우유버터, 서울우유 생크림,  무항생제 달걀, 앵커버터, 발로나 초콜릿, 마다가스카르 바닐라, 알루미늄 프리 베이킹파우더 등 믿을수 있는 재료만을 사용합니다. 방부제, 유화제 등은 절대 사용하지 않습니다.</p>
+                        <br><h3>예약 문의</h3>
+                        <p>주문 및 클래스 문의는 최소 2일~7일 전에는 해주셔야 합니다.
+                            혼자 운영하는 가게라 주문 및 수업이 미리 잡혀 있으면 아쉽지만 모두 해드리지 못하는 경우가 생길수도 있어요.</p>
+                    </div>
+                    <!-- End Main Text -->
+                    <div class="col-md-6">
+                        <h3 class="padding-vert-10">찾아오는 길</h3>
+                        <div id="map" style="width:100%;height:400px;"></div>
+
+                        <script>
+                            var HOME_PATH = window.HOME_PATH || '.';
+                            var map = new naver.maps.Map('map', {
+                                center: new naver.maps.LatLng(36.0836846, 129.3981850),
+                                zoom: 13
+                            });
+                            var marker = new naver.maps.Marker({
+                                position: new naver.maps.LatLng(36.0832000, 129.3977850),
+                                map: map
+                            });
+                            var contentString = [
+                                '<div class="iw_inner">',
+                                '   <h3>JCake</h3>',
+                                '   <p>경상북도 포항시 북구 양덕동 1457번지 남광 하우스스토리 상가 2층<br />',
+                                '   </p>',
+                                '</div>'
+                            ].join('');
+
+                            var infowindow = new naver.maps.InfoWindow({
+                                content: contentString
+                            });
+
+                            naver.maps.Event.addListener(marker, "click", function(e) {
+                                if (infowindow.getMap()) {
+                                    infowindow.close();
+                                } else {
+                                    infowindow.open(map, marker);
+                                }
+                            });
+
+                            infowindow.open(map, marker);
+                        </script>
+                    </div>
+                </div>
             </div>
-          </div>
-
         </div>
-      </div>
+        <!-- === END CONTENT === -->
 
 
-      <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-          <div class="container">
-            <div class="row center">
-              <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-            </div>
-          </div>
-        </div>
-        <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
-      </div>
-
-      <div class="container">
-        <div class="section">
-
-          <div class="row">
-            <div class="col s12 center">
-              <h3><i class="mdi-content-send brown-text"></i></h3>
-              <h4>Contact Us</h4>
-              <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-
-      <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-          <div class="container">
-            <div class="row center">
-              <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-            </div>
-          </div>
-        </div>
-        <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
-      </div>
-
-      <footer class="page-footer teal">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Jcake</h5>
-              <p class="grey-text text-lighten-4">
-경북 포항시 북구 양덕동 1457번지 남광하우스토리 상가 2층  <br>
- 사업자등록번호 : 384-67-00046 <br>
- 전화번호 : 010 6613 3751 <br>
- 이메일 : jungscake@naver.com
-                </p>
-
-
-            </div>
-            
-          </div>
-        </div>
-        <div class="footer-copyright">
-          <div class="container">
-          Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-          </div>
-        </div>
-      </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <!-- Compiled and minified CSS -->
-
-
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-<script type="text/javascript">
-(function($){
-$(function(){
-
-  $('.button-collapse').sideNav();
-  $('.parallax').parallax();
-  $('.carousel.carousel-slider').carousel({full_width: true});
-}); // end of document ready
-})(jQuery); // end of jQuery name space
-</script>
-        </body>
+        <%-include ./common/footer%>
+        <%-include ./common/js%>
+    </body>
 </html>

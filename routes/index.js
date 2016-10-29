@@ -10,12 +10,37 @@ router.get('/main', function(req, res, next){
   res.render('main')
 })
 
-router.get('/introduce', function(req, res, next){
-  res.render('introduce')
+router.get('/introduction', function(req, res, next){
+  res.render('introduction')
+});
+
+router.get('/cookie', function(req, res, next){
+    res.render('cookie')
 })
 
-router.post('/posttest', function(req, res, next){
-  res.render('poster', {req:req})
+router.get('/roll', function(req, res, next){
+    res.render('roll')
 })
+
+
+router.get('/cream', function(req, res, next){
+    res.render('cream')
+})
+
+
+router.get('/macaron', function(req, res, next){
+    res.render('macaron')
+})
+
+router.get('/flowercake', function(req, res, next){
+    res.render('flowercake')
+})
+
+
+router.get('/photo', function(req, res, next){
+    res.render('photo')
+})
+
+
 
 module.exports = router;
