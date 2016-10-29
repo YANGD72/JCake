@@ -40,7 +40,9 @@ router.get('/flowercake', function(req, res, next){
 router.get('/photo', function(req, res, next){
     res.render('photo')
 })
-
+router.get('/order', function(req, res, next){
+    res.render('order')
+})
 
 
 module.exports = router;

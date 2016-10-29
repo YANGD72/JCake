@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Title -->
+    <title>JCake Homepage</title>
+    <!-- Meta -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- Favicon -->
+    <link href="favicon.ico" rel="shortcut icon">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/stylesheets/css/bootstrap.css" rel="stylesheet">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="/stylesheets/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/css/nexus.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/css/custom.css" rel="stylesheet">
+    <!-- Google Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+
+  </head>
+  <body>
+  <div id="body-bg">
+    <!-- Phone/Email -->
+    <div id="pre-header" class="background-gray-lighter">
+      <div class="container no-padding">
+        <div class="row hidden-xs">
+          <div class="col-sm-6 padding-vert-5">
+            <strong>Phone:</strong>&nbsp;1-800-123-4567
+          </div>
+          <div class="col-sm-6 text-right padding-vert-5">
+            <strong>Email:</strong>&nbsp;info@joomla51.com
+          </div>
+        </div>
+      </div>
+    </div>
+    <%-include ./common/header.ejs%>
+    <!-- End Phone/Email -->
+
+
+
+    <!-- === BEGIN CONTENT === -->
+
+
+    <div id="content" class="bottom-border-shadow">
+      <div class="container background-white bottom-border">
+        <div class="row margin-vert-30">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="col-sm-2 control-label">이메일 주소</label>
+              <div class="col-sm-10"><input type="email" class="form-control" id="exampleInputEmail1" placeholder="이메일을 입력하세요"></div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1" class="col-sm-2 control-label">연락처</label>
+              <div class="col-sm-10"><input type="number" class="form-control" id="exampleInputPassword1" placeholder="연락처"></div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputTime" class="col-sm-2 control-label">시간</label>
+              <div class="col-sm-10"><input type="number" class="form-control" id="exampleInputTime" placeholder="날짜/시간"></div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputTime" class="col-sm-2 control-label">상세 사항</label>
+              <div class="col-sm-10"> <textarea class="form-control" rows="10"></textarea></div>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputFile" class="col-sm-2 control-label">사진 업로드</label>
+              <div class="col-sm-10">
+                <input type="file" id="exampleInputFile"></div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputFile" class="col-sm-2 control-label"></label>
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-success">주문하기</button>
+                </div>
+            </div>
+
+          </form>
+          
+        </div>
+      </div>
+    </div>
+    <!-- === END CONTENT === -->
+
+
+    <%-include ./common/footer%>
+    <%-include ./common/js%>
+
+  </body>
+</html>
